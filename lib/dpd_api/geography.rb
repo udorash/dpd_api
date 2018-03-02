@@ -21,7 +21,7 @@ module DpdApi
       protected
 
       def url
-        "#{DpdApi.configuration.base_url}/services/geography?wsdl"
+        "#{DpdApi.configuration.base_url}/services/geography2?wsdl"
       end
     end
   end

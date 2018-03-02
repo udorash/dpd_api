@@ -94,7 +94,7 @@ Getting started
 ---------------
 
 ### DpdApi::Geography
-matches `/services/geography?wsdl` in DPD SOAP API
+matches `/services/geography2?wsdl` in DPD SOAP API
 
 ####.cities_cash_pay
 matches `getCitiesCashPay`
