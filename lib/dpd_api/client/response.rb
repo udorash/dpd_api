@@ -57,8 +57,7 @@ module DpdApi
         end
 
         def request
-          namespace = @namespace || :request
-          @request_params ||= @params.blank? ? @merged_params : { namespace => @merged_params  }
+          @namespace.nil? ? @merged_params : { @namespace => @merged_params }
         end
       end
     end

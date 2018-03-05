@@ -5,12 +5,17 @@ module DpdApi
     class << self
       def service_cost(params = {})
         method = :get_service_cost2
-        response(method, params)
+        response(method, params, namespace: :request)
       end
 
       def service_cost_by_parcels(params = {})
         method = :get_service_cost_by_parcels2
-        response(method, params)
+        response(method, params, namespace: :request)
+      end
+
+      def service_cost_international(params = {})
+        method = :get_service_cost_international
+        response(method, params, namespace: :request)
       end
 
       protected

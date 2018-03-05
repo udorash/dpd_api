@@ -3,9 +3,9 @@
 module DpdApi
   class Geography < Base
     class << self
-      def cities_cash_pay
+      def cities_cash_pay(params = {})
         method = :get_cities_cash_pay
-        response(method)
+        response(method, params, namespace: :request)
       end
 
       def terminals_self_delivery
@@ -15,7 +15,7 @@ module DpdApi
 
       def parcel_shops(params = {})
         method = :get_parcel_shops
-        response(method, params)
+        response(method, params, namespace: :request)
       end
 
       protected

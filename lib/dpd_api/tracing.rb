@@ -5,12 +5,12 @@ module DpdApi
     class << self
       def states_by_client_order(params = {})
         method = :get_states_by_client_order
-        response(method, params)
+        response(method, params, namespace: :request)
       end
 
       def states_by_client_parcel(params = {})
         method = :get_states_by_client_parcel
-        response(method, params)
+        response(method, params, namespace: :request)
       end
 
       def states_by_dpd_order(params = {})
